@@ -9,12 +9,15 @@ public class Fibo {
         int secondnum = 1;
         int sum = 0;
 
+        if (count == 1) {
+            sum = 1;
+        }
+
         for (int i = 1; i < count; i++)  {
             sum = firstnum + secondnum;
             firstnum = secondnum;
             secondnum = sum;
         }
-
         System.out.println("Final result is " + sum);
     }
 
