@@ -2,8 +2,14 @@ package com.carla;
 
 import java.util.Scanner;
 
+/**
+ * This program gets the largest number among three numbers.
+ */
+
 public class Largest {
     public static void main(String[] args) {
+
+        //Input, variables
         Scanner sc = new Scanner(System.in);
         int largest = 0;
 
@@ -14,6 +20,7 @@ public class Largest {
         System.out.print("Please enter the last number: ");
         int z = sc.nextInt();
 
+        //Check conditions
         if (x > y && x > z) {
             largest = x;
         } else if (y > x && y > z) {
